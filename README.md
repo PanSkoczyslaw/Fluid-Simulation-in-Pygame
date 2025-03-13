@@ -1,3 +1,4 @@
+
 1.Clone the repository: git clone https://github.com/PanSkoczyslaw/Fluid-Simulation-in-Pygame/tree/Rectangles. \
 2.Go to the directory: cd Fluid-Simulation-in-Pygame. \
 3.Activate the virtual environment: \

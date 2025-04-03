@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: left;
+      color: white;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Fluid Simulation
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Fluid Simulation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    </nav>
+    <div class="container">{% block co_to %} {% endblock %}</div>
+    <div class="container">{% block tu_python %} {% endblock %}</div>
+    <div class="container">{% block content %} {% endblock %}</div>
+    <div class="container">{% block o_griku %} {% endblock %}</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script>
+    <footer>
+      <h3>O nas</h3>
+      <p>
+        GRIK - Grupa Robocza Inzynierii Kognitywistycznej - działająca jako koło naukowe na Wydziale Psychologii i Kognitywistyki UAM. Na co dzień grzebiemy w komputerach, a wieczorami wychodzimy na piwo.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+figure {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  image-rendering: auto;
+}
+
+
+p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+
+figcaption {
+  text-align: center;
+  color: darkred;
+  font-size: 12px;
+}
+
+.red {
+  color: red !important;
+}
+
+.red:hover {
+  color: darkred !important;
+}
+
+.fat {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 70px;
+  line-height: 0.7;
+  margin-top: 35px;
+  margin-bottom: 18px;
+}
+
+.spicy {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.menu-title {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 24px;
+  font-variation-settings: "wdth" 100;
+  line-height: 0.5;
+  margin-top: 0px;
+}
+
+
+.menu-subtitle {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+  font-variation-settings: "wdth" 100;
+  line-height: 0.5;
+  margin-top: -5px;
+  margin-bottom: 4px;
+}
+
+.guzik-1 {
+  width: 101px;
+  height: 41px;
+  margin: 20px;
+  object-fit: contain;
+  border-radius: 33px;
+  border: solid 2px #000;
+  background: url(guzik_1.png);
+}
+
+.guzik-1:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.guzik-1:active {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.guzik-1.clicked {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.guzik-2 {
+  width: 101px;
+  height: 41px;
+  margin: 20px;
+  object-fit: contain;
+  border-radius: 33px;
+  border: solid 2px #000;
+  background: url(guzik_2.png);
+}
+
+.guzik-2:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.guzik-2:active {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.guzik-2.clicked {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.guzik-3 {
+  width: 101px;
+  height: 41px;
+  margin: 20px;
+  object-fit: contain;
+  border-radius: 33px;
+  border: solid 2px #000;
+  background: url(guzik_3.png);
+}
+
+.guzik-3:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.guzik-3:active {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.guzik-3.clicked {
+  box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+#fluid-container {
+  border-radius: 20px;
+  background-color: #F8F9FA;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#menu {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+#canvas-container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: black;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+
+/*usuwam przycisk nawigacji, który się pojawia przy zmniejszeniu strony, bo nic nie robi, nwm czy potrzebne komuś będzie, mam nadzieję, że nikt nie będzie szukać milion lat, gdzie to się schowało, bo przecież jest w kodzie :D */
+.navbar-toggler {
+  display: none !important;
+}

@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Fluid Simulation</title>
-  <style>
-    canvas {
-      display: block;
-      margin: 0 auto;
-      background: black;
-    }
-    #menu {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    button {
-      margin: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="styl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 style="text-align:center">Fluid Simulation (Canvas)</h1>
-  <div id="menu">
-    <button onclick="setColorMode('color1')">Fire</button>
-    <button onclick="setColorMode('color2')">Fire2</button>
-    <button onclick="setColorMode('color3')">Tak</button>
+  <div id="fluid-container">
+    <div id="menu">
+      <h2 class="menu-title">Choose your fighter</h2>
+      <h2 class="menu-subtitle">(a.k.a. wybierz kolorek płynu)</h2>
+      <button class="guzik-1"></button>
+      <button class="guzik-2"></button>
+      <button class="guzik-3"></button>
+    </div>
+
+    <div id="canvas-container">
+      <canvas id="canvas" width="512" height="512"></canvas>
+    </div>
   </div>
-  <canvas id="canvas" width="512" height="512"></canvas>
 
   <script>
     const canvas = document.getElementById('canvas');
@@ -162,6 +158,23 @@
     }
 
     animate();
+
+    const buttons = document.querySelectorAll('.guzik-1, .guzik-2, .guzik-3');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Ustaw kolor zależnie od guzika
+        if (button.classList.contains('guzik-1')) setColorMode('color1');
+        if (button.classList.contains('guzik-2')) setColorMode('color2');
+        if (button.classList.contains('guzik-3')) setColorMode('color3');
+
+        // Dodaj efekt kliknięcia
+        button.classList.add('clicked');
+        setTimeout(() => {
+          button.classList.remove('clicked');
+        }, 100);
+      });
+    });
   </script>
 </body>
 </html>

@@ -2,24 +2,31 @@
 {% load static %}
 {% block title %} HEJKA {% endblock %}
 {% block co_to  %}
-<h1> Fluid symulation - pole gradientowe</h1>
+<h1 class="fat">Symulacja Płynu</h1>
+<h1 class="spicy">– pole gradientowe –</h1>
 {% endblock %}
 {% block tu_python %}
-<iframe src="{% static 'fluid_sim.html' %}" width="540" height="600" style="border:none;"></iframe>
+<div class="simulation-wrapper">
+    <div class="iframe-wrapper">
+        <iframe src="{% static 'fluid_sim.html' %}?v={{ timestamp }}" class="responsive-iframe"></iframe>
+    </div>
+</div>
+
 {% endblock %}
+
 {% block content %}
 <h2> O co chodzi i jak działa? </h2>
-<p>Fluid simulation, czyli symulacja płynu. To coś typu zabawa palcem po wodzie, gdzie mozna zaobserwować ciekawe poruszanie się płynu, to właśnie chcieliśmy uzyskać tworząc naszą symulację - środowisko, 
-    które pod wpływem nacisku myszki zachowuje się jak płyn. W celu stworzenia jej najpierw potrzebowaliśmy zapoznać się z samym sposobem działania płynów. W pomocy przyszły nam równania Naviera-Stokesa 
-    (Rys. 1), czyli "zestaw równań opisujących zasadę zachowania pędu dla poruszającego się płynu. Według nich zmiany pędu elementu płynu zależą jedynie od sił masowych, zewnętrznego ciśnienia i wewnętrznych sił lepkości w płynie." (Wikipedia).</p>
+<p>Fluid simulation, czyli symulacja płynu. To coś typu zabawa palcem po wodzie, gdzie mozna zaobserwować ciekawe poruszanie się płynu, to właśnie chcieliśmy uzyskać tworząc naszą symulację – środowisko,
+    które pod wpływem nacisku myszki zachowuje się jak płyn. W celu stworzenia jej najpierw potrzebowaliśmy zapoznać się z samym sposobem działania płynów. W pomocy przyszły nam równania Naviera-Stokesa
+    (Rys.&nbsp1), czyli „Zestaw równań opisujących zasadę zachowania pędu dla poruszającego się płynu. Według nich zmiany pędu elementu płynu zależą jedynie od sił masowych, zewnętrznego ciśnienia i wewnętrznych sił lepkości w płynie.” (🔥&nbsp;<a class="red" href="https://pl.wikipedia.org/wiki/Równania_Naviera-Stokesa" target="_blank" rel="noopener">Wikipedia</a>&nbsp;🔥).</p>
 <figure>
     <img src="{% static 'wzory.png' %}" alt="Równania Naviera-Stokesa">
-    <figcaption>Ryc. 1: Równania Naviera-Stokesa dla prędkości w zwartej notacji wektorowej (u góry) oraz równanie opisujące gęstość poruszającą się w polu prędkości (na dole).</figcaption>
+    <figcaption>Rys. 1: Równania Naviera-Stokesa dla prędkości w zwartej notacji wektorowej (u góry) oraz równanie opisujące gęstość poruszającą się w polu prędkości (na dole).</figcaption>
   </figure>
-<p>W celu stworzenia takiej symulacji potrzebne było trochę zmienić nasze myślenie na temat płynu. Ciecz to jednak "stworzenie" z miliona malutkich cząsteczek, 
-    my mamy trochę mniej ni miliony i to nie tyle cząsteczek, co wektorów.</p>
+<p>W celu stworzenia takiej symulacji potrzebne było trochę zmienić nasze myślenie na temat płynu. Ciecz to jednak "stworzenie" z miliona malutkich cząsteczek,
+    my mamy trochę mniej niż miliony i to nie tyle cząsteczek, co wektorów.</p>
 <p>
 Więcej o tym jak to działa. Gradient i funkcje fizyczne.
 </p>
-<p>Stworzone w ramach działań Grupy Roboczej Inynierii Kognitywistycznej WPiK UAM</p>
+<p>Stworzone w ramach działań Grupy Roboczej Inżynierii Kognitywistycznej WPiK UAM</p>
 {% endblock %}

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    footer {
-      background-color: #777;
-      padding: 10px;
-      text-align: left;
-      color: white;
-    }
-  </style>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="pl">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styl.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <title>
       {% block title %}
         Fluid Simulation
       {% endblock %}
     </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,7 +32,7 @@
     <footer>
       <h3>O nas</h3>
       <p>
-        GRIK - Grupa Robocza Inzynierii Kognitywistycznej - działająca jako koło naukowe na Wydziale Psychologii i Kognitywistyki UAM. Na co dzień grzebiemy w komputerach, a wieczorami wychodzimy na piwo.
+        GRIK – Grupa Robocza Inżynierii Kognitywistycznej – działająca jako koło naukowe na Wydziale Psychologii i Kognitywistyki UAM. Na co dzień grzebiemy w komputerach, a wieczorami wychodzimy na piwo.
       </p>
     </footer>
   </body>
